@@ -14,6 +14,8 @@ class BDLivrosOpenHelper(
         requireNotNull(db)
 
         TabelaBDCategorias(db).cria()
+        TabelaBDLivros(db).cria()
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
